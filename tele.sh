@@ -61,8 +61,7 @@ banner
                   echo ""
                   echo -e $'\e[1;33m\e[0m\e[1;33m // CREDENTIAL //  \e[0m'
                   echo ""
-                  echo '
-                  tail -f log.txt | grep -e "PHONE_NUMBER" -e "OTP_CODE" ' | lolcat   
+                  tail -f log.txt | grep -e "PHONE_NUMBER" -e "OTP_CODE"
 
                 ;;
 
