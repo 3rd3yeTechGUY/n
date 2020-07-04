@@ -33,7 +33,7 @@ chmod 777 Logo.sh
 ./Logo.sh
 echo ""
 echo -e $'\e[1;32m\e[0m\e[1;32m TELEGRAM ATTACK  \e[0m'
-echo -e $'\e[1;37m\e[0m\e[1;37m --------------------- > > >\e[0m'
+echo ""
 echo ""
 banner(){
 printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Telegram \e[0m\n"
