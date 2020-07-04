@@ -36,14 +36,12 @@ echo -e $'\e[1;32m\e[0m\e[1;32m WHATSAPP ATTACK  \e[0m'
 echo -e $'\e[1;37m\e[0m\e[1;37m --------------------- > > >\e[0m'
 echo ""
 banner(){
-printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m WhatsApp \e[0m\n"
+printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m WhatsApp \e[0m\n"
 printf "\n"
 }
 banner
-echo ""
-echo ""
                 
-                 read -p $'\e[1;33m[\e[0m\e[1;77m <<>> \e[0m\e[1;33m]\e[0m\e[1;32m Enter Your Choice : \e[0m' option
+                 read -p $'\e[1;33m[\e[0m\e[1;77m [×] \e[0m\e[1;33m]\e[0m\e[1;32m ENTER 01 : \e[0m' option
 		 case $option in 
 			 
 
