@@ -274,6 +274,9 @@ case $option in
                   ;;
 
 
+
+
+
                   00)echo -e $'\e[1;32m[\e[0m\e[1;77m+\e[0m\e[1;32m]\e[0m\e[1;33m                                                         >> THANKS FOR JOIN US >> \e[0m'
                    sleep 1
                    exit
